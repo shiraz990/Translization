@@ -29,7 +29,7 @@ class HuggingFaceTranslator(private val httpClient: HttpClient) {
         val translationResponse = json.decodeFromString<List<TranslationResponse>>(response.body)
         return translationResponse.firstOrNull()?.generatedText ?: "Translation unavailable"
     }
-    suspend fun translateTEnglish(text: String): String {
+    suspend fun translateToEnglish(text: String): String {
         val requestBody = """{"inputs": "$text"}"""
 
         val headers = mapOf("Authorization" to "Bearer $apiKey")

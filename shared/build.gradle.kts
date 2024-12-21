@@ -96,7 +96,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 
-    coordinates(groupId = "io.github.shiraz990", artifactId = "shared", version = "1.0.9" )
+    coordinates(groupId = "io.github.shiraz990", artifactId = "shared", version = "1.1.0" )
 
     pom {
         name.set("Arabic Translation KMP")
