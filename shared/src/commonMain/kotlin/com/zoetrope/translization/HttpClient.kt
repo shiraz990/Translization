@@ -10,5 +10,6 @@ expect class PlatformUtils() {
 // Shared code in commonMain
 
 expect class HttpClient {
-    suspend fun post(url: String, headers: Map<String, String>, body: String): String
+    suspend fun post(url: String, headers: Map<String, String>, body: String): HttpResponse
 }
+data class HttpResponse(val code: Int, val body: String)

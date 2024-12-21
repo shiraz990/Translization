@@ -11,7 +11,7 @@ actual class HttpClient {
         url: String,
         headers: Map<String, String>,
         body: String
-    ): String {
+    ): HttpResponse {
         TODO("Not yet implemented")
     }
 }
