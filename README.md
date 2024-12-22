@@ -46,6 +46,9 @@ build.gradle.kts
 implementation(libs.shared.android)
 
 
+Sample Repo 
+https://github.com/shiraz990/SampleTranslization
+
 
 
 
